@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamdouna - Émotions · The New Art Gallery Concept</title>
+<meta name="description" content="Émotions : la nouvelle exposition du peintre Hamdouna, présentée par The New Art Gallery Concept. Une série de portraits où la couleur devient un état intérieur. Vernissage le 17 octobre 2026 à La Soukra, Tunis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+<script>try{var t=localStorage.getItem("hamdouna-theme");if(t==="light"||(!t&&window.matchMedia("(prefers-color-scheme: light)").matches))document.documentElement.classList.add("light")}catch(e){}</script>
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="brand" href="#accueil">Hamdouna</a>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème sombre / clair">
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      </button>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+    <nav class="nav-links">
+      <a href="#artiste">L'artiste</a>
+      <a href="#preface">Préface</a>
+      <a href="#exposition">Exposition</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="accueil" class="hero">
+    <div class="hero-bg" data-speed="0.35">
+      <div class="hero-scene">
+        <img class="hero-base" src="Hamdouna afffiche/new pic/no_text_hero photo.jpeg" alt="">
+        <img class="hero-blur" src="Hamdouna afffiche/new pic/no_text_hero photo.jpeg" alt="" aria-hidden="true">
+      </div>
+    </div>
+    <div class="orb orb-hero" data-depth="16" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-inner">
+        <span class="hero-badge"><strong>The New Art Gallery Concept</strong><br>présente</span>
+        <h1 class="hero-title"><img src="Hamdouna afffiche/new pic/titre-hamdouna.png" alt="Hamdouna"></h1>
+        <p class="hero-sub">Artiste peintre</p>
+        <p class="hero-meta">« Émotions » · Vernissage samedi 17 octobre 2026, 18h00 · La Soukra</p>
+        <div class="hero-cta-group">
+          <div class="countdown" id="countdown" aria-label="Compte à rebours avant le vernissage">
+            <div class="cd-col"><span class="cd-num" id="cd-days">00</span><span class="cd-label">Jours</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-col"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">Heures</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-col"><span class="cd-num" id="cd-mins">00</span><span class="cd-label">Minutes</span></div>
+            <span class="cd-sep">:</span>
+            <div class="cd-col"><span class="cd-num" id="cd-secs">00</span><span class="cd-label">Secondes</span></div>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#exposition">Découvrir l'exposition</a>
+            <a class="btn btn-ghost" href="#galerie">Voir les œuvres</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="hero-scroll" href="#artiste" aria-label="Descendre">↓</a>
+  </section>
+
+  <section id="artiste" class="section alt">
+    <div class="section-inner">
+      <div class="artist-grid">
+        <figure class="artist-photo parallax reveal" data-speed="0.12">
+          <img src="Hamdouna afffiche/new pic/Photo de l'artiste dans biographie.jpeg" alt="Portrait de l'artiste Hamdouna">
+        </figure>
+        <div class="artist-text reveal">
+          <p class="section-label">Biographie artistique</p>
+          <h2>Hamdouna Sanaa Bouzouita</h2>
+          <div class="facts">
+            <span class="fact"><strong>Née à</strong> Ksar Hellal</span>
+            <span class="fact"><strong>Le</strong> 10 juillet 1942</span>
+            <span class="fact"><strong>Pratique</strong> Autodidacte</span>
+          </div>
+          <div class="bio-collapse" id="bioCollapse">
+            <p>Moi, Hamdouna Sanaa Bouzouita, j'ai aujourd'hui 84 ans. Si je devais raconter mon histoire avec la peinture, je commencerais par un souvenir qui remonte à ma 5ème année au lycée des jeunes filles de Montfleury. Mon professeur de dessin, Mademoiselle Petit, venait de regarder un de mes dessins : une feuille de platane. Elle s'est tournée vers moi et m'a dit : « Ma petite, vous êtes vraiment douée. Si vous le souhaitez, je peux vous aider à aller à Paris pour y suivre des études spécialisées. »</p>
+            <p>Je n'ai pas oublié cette phrase. Mais à cette époque, la réalité n'était pas favorable. Je lui ai répondu simplement : « Madame, je n'en ai pas les moyens. Nous sommes neuf frères et sœurs dans ma famille… » Et la conversation s'est arrêtée là. Mais pas le rêve. Quelque part au fond de moi, cette petite étincelle venait de naître. Elle allait rester là, silencieuse, pendant de nombreuses années.</p>
+            <p>La vie a continué. La famille, les responsabilités, le travail… J'ai été emportée par le tourbillon de la vie mais la peinture était un rêve que je gardais au fond de moi. Jusqu'aux années quatre-vingt, quelque chose se réveille. Je me suis remise à regarder les œuvres avec passion. J'admirais les peintures que je rencontrais, leurs couleurs, leurs matières, les émotions qu'elles faisaient naître en moi.</p>
+            <p>Et puis, un soir, vers 23 heures, après que mon mari et mes enfants se furent endormis, j'ai pris une feuille de papier et quelques couleurs. Et j'ai commencé. C'était mon moment à moi. Tous les soirs où je le pouvais, je retrouvais mes couleurs. Je dessinais, j'expérimentais, j'apprenais seule, petit à petit.</p>
+            <p>Plus tard, j'ai décidé de franchir une nouvelle étape. J'ai pris mon courage à deux mains et je me suis inscrite dans un atelier. Puis un cours en a entraîné un autre, une rencontre une autre, une découverte une autre… Au fil des années, j'ai exploré de nombreuses techniques : le dessin, la pyrogravure, le pastel, l'aquarelle, la peinture à l'huile, l'acrylique… J'ai peint sur toutes sortes de supports : papier, verre, tissu, bois, toile… Chaque technique m'a appris quelque chose. Chaque matière m'a offert une nouvelle façon d'exprimer ce que je ressentais. Et cette aventure s'est poursuivie pendant plus de trente ans, jusqu'en 2021.</p>
+            <p>Cette année-là, je me sentais suffisamment sûre de moi et confiante, j'ai décidé de me retirer des ateliers. Mais je n'ai pas arrêté de peindre. Au contraire. Je me suis installée dans mon atelier chez moi, et j'ai commencé à peindre plus librement, plus instinctivement, plus profondément.</p>
+            <p>Et les tableaux se sont accumulés. Des dizaines, puis des centaines. Ils ont peu à peu envahi ma maison, comme autant de fragments de ma vie, de souvenirs, d'expériences et d'émotions.</p>
+            <p>Quand je regarde aujourd'hui tout ce chemin parcouru, je ressens une immense fierté. Par ailleurs j'ai eu la chance de partager mon travail avec le public, d'abord à travers plusieurs expositions collectives dans des galeries du Grand Tunis ou des maisons de culture dans plusieurs villes du pays, puis lors d'expositions personnelles, notamment à El Teatro.</p>
+            <p>En 2023, j'ai vécu un moment particulièrement précieux : j'ai exposé avec mon fils et ma petite-fille, trois générations réunies autour de l'art.</p>
+            <p>Et pourtant, au fond de moi, un rêve restait encore à accomplir. Exposer en solo mes peintures acryliques abstraites. Ces œuvres sont peut-être celles qui me ressemblent le plus aujourd'hui. Elles ne racontent pas nécessairement une histoire précise. Elles racontent plutôt des sensations, des mouvements, des souvenirs et des émotions. Elles sont le résultat de toutes ces années de recherche, d'apprentissage et de liberté.</p>
+            <p>Et aujourd'hui, à 84 ans, je peux enfin dire que cette petite fille qui dessinait une feuille de platane n'a jamais vraiment abandonné son rêve. La phrase de Mademoiselle Petit est restée quelque part en moi pendant plus de soixante ans. Elle avait vu une étincelle. Je crois qu'elle ne savait pas qu'elle venait d'allumer une lumière qui allait m'accompagner toute ma vie.</p>
+            <p>Mon rêve voit enfin le jour. Cette exposition s'appelle « Émotions ». C'est le titre que j'ai choisi parce qu'au fond, c'est cela que je peins depuis toutes ces années : mes émotions. Je vous invite aujourd'hui à ressentir, à votre tour, ce que mes couleurs ont à raconter.</p>
+          </div>
+          <button class="bio-toggle" id="bioToggle" aria-expanded="false" aria-controls="bioCollapse">Lire plus</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="preface" class="section">
+    <div class="orb orb-side" data-depth="26" aria-hidden="true"></div>
+    <div class="section-inner">
+      <p class="section-label reveal">Préface</p>
+      <h2 class="section-title reveal">« Émotions » : la matière en vibration, la couleur en liberté</h2>
+      <p class="lead-block reveal">La peinture de Hamdouna a été pour elle un refuge intime et une quête de liberté. Loin des règles pré-établies, c'est dans la solitude que Hamdouna forge son propre langage visuel. Elle nous offre des œuvres riches en textures et en émotions brutes, capturant des instants de vie, des paysages intérieurs et des fragments d'intimité.</p>
+      <p class="lead-block reveal">L'exposition « Émotions » propose ainsi un itinéraire sensible à travers le parcours d'une artiste dont la maturité plastique réside dans cette capacité rare à transformer l'expérience humaine en une empreinte esthétique vibrante et intemporelle.</p>
+    </div>
+  </section>
+
+  <section id="demarche" class="section alt">
+    <div class="orb orb-side" data-depth="26" aria-hidden="true"></div>
+    <div class="section-inner">
+      <div class="demarche-layout">
+        <figure class="demarche-art reveal">
+          <img src="tableaux tel/new canvas/tab_7.jpg" alt="Œuvre de Hamdouna">
+        </figure>
+        <div class="demarche-text">
+          <p class="section-label reveal">Démarche artistique</p>
+          <div class="prose-block reveal">
+            <p>Peindre, pour Hamdouna, c'est laisser surgir ce qui ne peut pas toujours être dit.</p>
+            <div class="bio-collapse" id="bioCollapse2">
+              <p>Depuis toujours attirée par les couleurs, les formes et la matière, elle aborde la peinture comme un espace de liberté où le geste prend progressivement le dessus sur la représentation.</p>
+              <p>Ses œuvres ne cherchent pas à reproduire fidèlement le monde visible. Elles en retiennent plutôt une sensation, une émotion, une lumière, un souvenir. Un jardin peut devenir une profusion de couleurs, un paysage se réduire à quelques traces, une fleur disparaître dans la matière pour ne laisser que son énergie.</p>
+              <p>Hamdouna travaille par superpositions, coulures, frottements, empreintes, éclaboussures et gestes spontanés. Elle accepte l'accident et accueille l'imprévu. La peinture se construit alors dans un dialogue entre ce qu'elle décide et ce que la matière lui propose.</p>
+              <p>Ses compositions sont souvent foisonnantes. Les couleurs s'y rencontrent, se recouvrent, se répondent et parfois s'opposent. Les rouges, les jaunes, les verts, les bleus et les violets ne sont pas seulement des couleurs : ils deviennent des forces, des rythmes, des vibrations.</p>
+              <p>Peu à peu, la réalité reconnaissable s'efface pour laisser place à un univers plus intérieur. Ce qui était fleur devient mouvement, ce qui était paysage devient émotion, ce qui était matière devient souvenir.</p>
+              <p>Sa peinture porte ainsi une double dimension : celle d'une nature observée et celle d'un monde intérieur qui cherche à se révéler.</p>
+              <p>Chez Hamdouna, peindre n'est donc pas seulement représenter. C'est chercher, expérimenter, se souvenir, ressentir : et surtout laisser une trace.</p>
+              <p>Une trace de couleur, une trace de vie.</p>
+            </div>
+            <button class="bio-toggle" id="bioToggle2" aria-expanded="false" aria-controls="bioCollapse2">Lire plus</button>
+          </div>
+<figure class="quote reveal">
+            <blockquote>Je ne cherche pas à peindre le sujet tel qu'il est mais la sensation qu'il me donne</blockquote>
+            <figcaption>Hamdouna</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="exposition" class="section">
+    <div class="orb orb-side" data-depth="26" aria-hidden="true"></div>
+    <div class="section-inner">
+      <p class="section-label reveal">L'exposition</p>
+      <div class="event-card reveal">
+        <div class="event-media"><img src="Hamdouna afffiche/new pic/new affiche.jpg" alt="Affiche de l'exposition Émotions"></div>
+        <div class="event-body">
+          <h2><img src="Hamdouna afffiche/new pic/titre-emotions.png" alt="Émotions"></h2>
+          <p class="event-meta"><span>Samedi 17 octobre 2026</span><span>18h00</span><span>The New Art Gallery Concept - La Soukra 2036</span></p>
+          <p>Émotions n'est pas une rétrospective : c'est une seule émotion, vue vingt fois, sous vingt lumières différentes. Les toiles se répondent comme les pages d'un même carnet : la même femme, le même sourire, la même fleur rouge, et pourtant jamais deux fois la même image.</p>
+          <p>Entre deux portraits, l'artiste laisse le hasard entrer dans l'atelier : projections, taches, trames de points, fils tendus d'un bord à l'autre. La série se lit alors comme une mémoire qui se recompose.</p>
+          <a class="link-more" href="#infos">Visite et informations pratiques →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="historique" class="section alt">
+    <div class="section-inner">
+      <p class="section-label reveal">Historique sélectif des expositions</p>
+      <h2 class="section-title reveal">Parcours</h2>
+      <div class="timeline reveal">
+        <div class="tl-row"><span class="tl-year">1997 · Août</span><span class="tl-text">Exposition collective, Kelibia.</span></div>
+        <div class="tl-row"><span class="tl-year">2012 · Février</span><span class="tl-text">Exposition collective, Maison de la Culture de Ben Arous.</span></div>
+        <div class="tl-row"><span class="tl-year">2015 · Mai</span><span class="tl-text">Exposition collective « Au-delà des Rêves », Galerie Blel.</span></div>
+        <div class="tl-row"><span class="tl-year">2016 · Mai</span><span class="tl-text">Exposition « 27+1 », Galerie Blel / Atelier Fadhel Ghédira.</span></div>
+        <div class="tl-row"><span class="tl-year">2017 · Juin</span><span class="tl-text">Exposition personnelle, Galerie Aire Libre - Espace El Teatro, Tunis.</span></div>
+        <div class="tl-row"><span class="tl-year">2018 · Décembre</span><span class="tl-text">Exposition collective, Maison de la Culture de Ksar Hellal.</span></div>
+        <div class="tl-row"><span class="tl-year">2019 · Juin</span><span class="tl-text">« Quand les belles âmes se rencontrent », Galerie Mosaïque.</span></div>
+        <div class="tl-row"><span class="tl-year">2023 · Mai</span><span class="tl-text">« Histoire de passion et de transmission », Galerie Mosaïque.</span></div>
+        <div class="tl-row"><span class="tl-year">2026 · Octobre</span><span class="tl-text">Exposition personnelle « Émotions », The New Art Gallery Concept, La Soukra.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerie" class="section">
+    <div class="section-inner">
+      <p class="section-label reveal">Galerie</p>
+      <h2 class="section-title reveal">Œuvres de la série « Émotions »</h2>
+      <div class="grid">
+        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod.jpg" alt="Œuvre de Hamdouna"></figure>
+        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_2.jpg" alt="Œuvre de Hamdouna"></figure>
+        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_3.jpg" alt="Œuvre de Hamdouna"></figure>
+        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_12.jpg" alt="Œuvre de Hamdouna"></figure>
+        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_25.jpg" alt="Œuvre de Hamdouna"></figure>
+        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_30.jpg" alt="Œuvre de Hamdouna"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" class="section alt">
+    <div class="section-inner">
+      <p class="section-label reveal">Visite</p>
+      <div class="info-cards">
+        <div class="info-card reveal"><h3>Vernissage</h3><p>Samedi 17 octobre 2026, 18h00</p><p class="note">Ouverture en présence de l'artiste</p></div>
+        <div class="info-card reveal"><h3>Période</h3><p>Jusqu'au 31 octobre 2026</p><p class="note">Œuvres de la série Émotions</p></div>
+        <div class="info-card reveal"><h3>Horaires</h3><p>Du mardi au dimanche</p><p class="note">18h - 21h</p></div>
+        <div class="info-card reveal"><h3>Entrée</h3><p>Entrée libre</p><p class="note">Tout public</p></div>
+        <div class="info-card reveal"><h3>Infoline</h3><p>+216 90 24 22 16</p><p class="note">Renseignements et visites guidées</p></div>
+        <div class="info-card reveal"><h3>Adresse</h3><p>22 Rue Cheikh Mohamed Enneifer</p><p class="note">La Soukra 2036, Tunis <a href="https://maps.app.goo.gl/FEjhYE3TCU82sCn18" target="_blank" rel="noopener">· Itinéraire</a></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section cta">
+    <div class="orb orb-cta" data-depth="22" aria-hidden="true"></div>
+    <div class="section-inner cta-box reveal">
+      <p class="cta-title">Contact</p>
+      <img class="cta-logo" src="tableaux tel/logo Gallery new art.png" alt="The New Art Gallery Concept">
+      <p class="cta-label">Expositions, acquisitions, presse</p>
+      <p>Informations sur les expositions en cours, demandes d'acquisition et contacts presse.</p>
+      <div class="cta-links">
+        <a class="link-cta" href="tel:+21690242216">+216 90 24 22 16</a>
+        <a class="link-cta" href="https://www.instagram.com/newartsoukra/" target="_blank" rel="noopener">@newartsoukra</a>
+        <a class="link-cta" href="https://maps.app.goo.gl/FEjhYE3TCU82sCn18" target="_blank" rel="noopener">La Soukra 2036, Tunis</a>
+      </div>
+      <a class="btn btn-solid" href="tel:+21690242216">Contactez-nous</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <p class="footer-brand">Hamdouna</p>
+      <p>Hamdouna - Artiste peintre</p>
+      <p>Création contemporaine tunisienne</p>
+      <img class="footer-signature" src="tableaux tel/HAMDOUNA signature.png" alt="Signature de Hamdouna">
+    </div>
+    <div class="footer-col">
+      <p class="footer-title">Contact</p>
+      <p>The New Art Gallery Concept</p>
+      <p><a href="tel:+21690242216">+216 90 24 22 16</a></p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-title">Suivre</p>
+      <p><a href="https://www.instagram.com/newartsoukra/" target="_blank" rel="noopener">Instagram</a></p>
+      <p><a href="https://www.facebook.com/profile.php?id=61555667974809" target="_blank" rel="noopener">Facebook</a></p>
+      <p><a href="https://maps.app.goo.gl/FEjhYE3TCU82sCn18" target="_blank" rel="noopener">Itinéraire</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 <a href="https://fxprodart.com/" target="_blank" rel="noopener">FX prod</a></p>
+    <p><a href="#accueil">Haut de page ↑</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Fermer">×</button>
+  <img src="" alt="" class="lightbox-img">
+</div>
+
+<script src="script.js?v=3"></script>
+</body>
+</html>
