@@ -11,11 +11,22 @@
 
   var themeBtn = document.getElementById("themeToggle");
   var rootEl = document.documentElement;
+  var titrelogo = document.getElementById("titrelogo");
+  function setTitleSrc() {
+    if (!titrelogo) return;
+    titrelogo.setAttribute("src",
+      rootEl.classList.contains("light")
+        ? "Hamdouna afffiche/new pic/titre-hamdouna light mode.png"
+        : "Hamdouna afffiche/new pic/titre-hamdouna dark mode.png"
+    );
+  }
+  setTitleSrc();
   if (themeBtn) {
     themeBtn.addEventListener("click", function () {
       var light = rootEl.classList.toggle("light");
       try { localStorage.setItem("hamdouna-theme", light ? "light" : "dark"); } catch (e) {}
       themeBtn.setAttribute("aria-label", light ? "Basculer le thème sombre" : "Basculer le thème clair");
+      setTitleSrc();
     });
   }
 
