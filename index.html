@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=5">
 <script>try{var t=localStorage.getItem("hamdouna-theme");if(t==="light"||(!t&&window.matchMedia("(prefers-color-scheme: light)").matches))document.documentElement.classList.add("light")}catch(e){}</script>
 </head>
 <body>
@@ -190,12 +190,37 @@
       <p class="section-label reveal">Galerie</p>
       <h2 class="section-title reveal">Œuvres de la série « Émotions »</h2>
       <div class="grid">
-        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod.jpg" alt="Œuvre de Hamdouna"></figure>
-        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_2.jpg" alt="Œuvre de Hamdouna"></figure>
-        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_3.jpg" alt="Œuvre de Hamdouna"></figure>
-        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_12.jpg" alt="Œuvre de Hamdouna"></figure>
-        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_25.jpg" alt="Œuvre de Hamdouna"></figure>
-        <figure class="grid-item reveal"><img src="tableaux tel/new canvas/Hamdouna2026byFXprod_30.jpg" alt="Œuvre de Hamdouna"></figure>
+        <figure class="grid-item reveal">
+          <img src="tableaux tel/new canvas/Hamdouna2026byFXprod.jpg" alt="Genèse — Hamdouna">
+          <figcaption><span class="cap-num">N° 04</span><span class="cap-title">Genèse</span><span class="cap-dims">80 × 80 cm</span></figcaption>
+        </figure>
+        <figure class="grid-item reveal">
+          <img src="tableaux tel/new canvas/Hamdouna2026byFXprod_2.jpg" alt="L'œil du silence — Hamdouna">
+          <figcaption><span class="cap-num">N° 02</span><span class="cap-title">L'œil du silence</span><span class="cap-dims">150 × 120 cm</span></figcaption>
+        </figure>
+        <figure class="grid-item reveal">
+          <img src="tableaux tel/new canvas/Hamdouna2026byFXprod_3.jpg" alt="Lignes de vie — Hamdouna">
+          <figcaption><span class="cap-num">N° 14</span><span class="cap-title">Lignes de vie</span><span class="cap-dims">100 × 70 cm</span></figcaption>
+        </figure>
+        <figure class="grid-item reveal">
+          <img src="tableaux tel/new canvas/Hamdouna2026byFXprod_12.jpg" alt="Vestiges — Hamdouna">
+          <figcaption><span class="cap-num">N° 12</span><span class="cap-title">Vestiges</span><span class="cap-dims">120 × 150 cm</span></figcaption>
+        </figure>
+        <figure class="grid-item reveal">
+          <img src="tableaux tel/new canvas/Hamdouna2026byFXprod_25.jpg" alt="La grâce du pacifique — Hamdouna">
+          <figcaption><span class="cap-num">N° 20</span><span class="cap-title">La grâce du pacifique</span><span class="cap-dims">53 × 46 cm</span></figcaption>
+        </figure>
+        <figure class="grid-item reveal">
+          <img src="tableaux tel/new canvas/Hamdouna2026byFXprod_30.jpg" alt="Lueurs d'automne — Hamdouna">
+          <figcaption><span class="cap-num">N° 41</span><span class="cap-title">Lueurs d'automne</span><span class="cap-dims">44 × 56 cm</span></figcaption>
+        </figure>
+      </div>
+      <div class="galerie-cta reveal">
+        <button class="btn btn-solid btn-voirplus" id="oeuvresOpen" aria-haspopup="dialog" aria-controls="oeuvres">
+          <span>Voir plus</span>
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 5v14M19 12l-7 7-7-7"></path></svg>
+        </button>
+        <p class="galerie-cta-note">L'ensemble des œuvres de l'exposition</p>
       </div>
     </div>
   </section>
@@ -262,6 +287,54 @@
   <img src="" alt="" class="lightbox-img">
 </div>
 
-<script src="script.js?v=3"></script>
+<div class="oeuvres-modal" id="oeuvres" role="dialog" aria-modal="true" aria-labelledby="oeuvresTitle" aria-hidden="true">
+  <div class="oeuvres-backdrop" data-oeuvres-close></div>
+  <div class="oeuvres-panel">
+    <header class="oeuvres-head">
+      <div class="oeuvres-head-text">
+        <p class="section-label">Galerie</p>
+        <h2 id="oeuvresTitle">Toutes les œuvres</h2>
+        <p class="oeuvres-count" id="oeuvresCount"></p>
+      </div>
+      <button class="oeuvres-close" data-oeuvres-close aria-label="Fermer la galerie">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg>
+      </button>
+    </header>
+
+    <nav class="oeuvres-filters" id="oeuvresFilters" aria-label="Filtrer les œuvres" hidden></nav>
+
+    <div class="oeuvres-body" id="oeuvresBody">
+      <div class="oeuvres-grid" id="oeuvresGrid"></div>
+
+      <div class="oeuvre-detail" id="oeuvreDetail" hidden>
+        <button class="oeuvre-back" id="oeuvreBack">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+          Galerie
+        </button>
+        <div class="oeuvre-detail-grid">
+          <figure class="oeuvre-detail-media">
+            <img id="oeuvreImg" src="" alt="">
+            <figcaption class="oeuvre-zoom-hint">Cliquez pour agrandir</figcaption>
+          </figure>
+          <div class="oeuvre-detail-info">
+            <p class="oeuvre-num" id="oeuvreNum"></p>
+            <h3 class="oeuvre-titre" id="oeuvreTitre"></h3>
+            <dl class="oeuvre-specs">
+              <div class="oeuvre-spec" id="oeuvreSpecAnnee"><dt>Année</dt><dd id="oeuvreAnnee"></dd></div>
+              <div class="oeuvre-spec" id="oeuvreSpecTech"><dt>Technique</dt><dd id="oeuvreTechnique"></dd></div>
+              <div class="oeuvre-spec"><dt>Dimensions</dt><dd id="oeuvreDims"></dd></div>
+            </dl>
+            <div class="oeuvre-nav">
+              <button class="oeuvre-nav-btn" id="oeuvrePrev">← Précédente</button>
+              <button class="oeuvre-nav-btn" id="oeuvreNext">Suivante →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js?v=5"></script>
 </body>
 </html>
